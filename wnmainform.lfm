@@ -1,0 +1,330 @@
+object WMainForm: TWMainForm
+  Left = 0
+  Height = 1041
+  Top = 18
+  Width = 1916
+  Align = alClient
+  AutoSize = True
+  Caption = 'TCmdBox Example Application'
+  ClientHeight = 1041
+  ClientWidth = 1916
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  Position = poScreenCenter
+  LCLVersion = '1.8.2.0'
+  object RightPanel: TPanel
+    Left = 1636
+    Height = 1041
+    Top = 0
+    Width = 280
+    Align = alRight
+    ClientHeight = 1041
+    ClientWidth = 280
+    Constraints.MinWidth = 200
+    TabOrder = 0
+    object Label1: TLabel
+      Left = 48
+      Height = 15
+      Top = 1
+      Width = 43
+      Caption = 'History'
+      ParentColor = False
+    end
+    object Button1: TButton
+      Left = 24
+      Height = 25
+      Top = 656
+      Width = 230
+      Anchors = [akLeft, akRight, akBottom]
+      BorderSpacing.InnerBorder = 4
+      Caption = 'End Programm'
+      OnClick = Button1Click
+      TabOrder = 0
+    end
+    object HistoryList: TListBox
+      Left = 24
+      Height = 400
+      Top = 24
+      Width = 230
+      Anchors = [akTop, akLeft, akRight, akBottom]
+      ItemHeight = 0
+      TabOrder = 1
+    end
+    object Button2: TButton
+      Left = 24
+      Height = 25
+      Top = 456
+      Width = 230
+      Anchors = [akLeft, akRight, akBottom]
+      BorderSpacing.InnerBorder = 4
+      Caption = 'Clear'
+      OnClick = Button2Click
+      TabOrder = 2
+    end
+    object CbSetCaret: TComboBox
+      Left = 24
+      Height = 23
+      Top = 600
+      Width = 230
+      Anchors = [akLeft, akRight, akBottom]
+      ItemHeight = 15
+      ItemIndex = 0
+      Items.Strings = (
+        'Caret-Line'
+        'Caret-Sub-Bar'
+        'Caret-Big-Bar'
+      )
+      OnChange = CbSetCaretChange
+      Style = csDropDownList
+      TabOrder = 3
+      Text = 'Caret-Line'
+    end
+    object Button3: TButton
+      Left = 24
+      Height = 25
+      Top = 504
+      Width = 230
+      Anchors = [akLeft, akRight, akBottom]
+      Caption = 'Process'
+      OnClick = Button3Click
+      TabOrder = 4
+    end
+    object cbWordWrap: TCheckBox
+      Left = 24
+      Height = 21
+      Top = 560
+      Width = 88
+      Anchors = [akLeft, akBottom]
+      Caption = 'WordWrap'
+      Checked = True
+      OnChange = cbWordWrapChange
+      State = cbChecked
+      TabOrder = 5
+    end
+    object trbMin1: TTrackBar
+      Left = 24
+      Height = 25
+      Top = 824
+      Width = 233
+      Max = -1
+      Min = -100
+      OnChange = trbMin1Change
+      Position = -1
+      Anchors = [akLeft, akRight, akBottom]
+      TabOrder = 6
+    end
+    object trbMax1: TTrackBar
+      Left = 24
+      Height = 25
+      Top = 776
+      Width = 230
+      Max = 100
+      Min = 1
+      OnChange = trbMax1Change
+      Position = 1
+      Anchors = [akLeft, akRight, akBottom]
+      TabOrder = 7
+    end
+    object chkProportional1: TCheckBox
+      Left = 24
+      Height = 21
+      Top = 744
+      Width = 230
+      Anchors = [akLeft, akRight, akBottom]
+      Caption = 'Porporcional'
+      OnChange = chkProportional1Change
+      TabOrder = 8
+    end
+    object colorbtnFunction1: TColorButton
+      Left = 24
+      Height = 25
+      Top = 696
+      Width = 230
+      Anchors = [akLeft, akRight, akBottom]
+      BorderWidth = 2
+      ButtonColorSize = 16
+      ButtonColor = clBlack
+    end
+  end
+  object Splitter1: TSplitter
+    Left = 1631
+    Height = 1041
+    Top = 0
+    Width = 5
+    Align = alRight
+    Beveled = True
+    ParentShowHint = False
+    ResizeAnchor = akRight
+  end
+  object OperationPanel: TPanel
+    Left = 0
+    Height = 1041
+    Top = 0
+    Width = 1631
+    Align = alClient
+    ClientHeight = 1041
+    ClientWidth = 1631
+    TabOrder = 2
+    OnClick = OperationPanelClick
+    object OperationPanel1: TPanel
+      Left = 1
+      Height = 762
+      Top = 1
+      Width = 1629
+      Align = alTop
+      Alignment = taLeftJustify
+      Anchors = [akTop, akLeft, akRight, akBottom]
+      AutoSize = True
+      ClientHeight = 762
+      ClientWidth = 1629
+      Constraints.MinHeight = 350
+      TabOrder = 0
+      OnClick = OperationPanelClick
+      object CmdBox: TCmdBox
+        Left = 1
+        Height = 760
+        Top = 1
+        Width = 1627
+        Align = alClient
+        PopupMenu = PopupMenu1
+        CaretColor = 33023
+        CaretType = cartUser
+        CaretWidth = 1
+        CaretHeight = 15
+        CaretYShift = 3
+        OnInput = CmdBoxInput
+        LineCount = 1000
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clSilver
+        Font.Height = -16
+        Font.Name = 'Arial'
+        Font.Pitch = fpVariable
+        BackGroundColor = clNavy
+        TabWidth = 60
+        PassWordChar = '*'
+        HistoryMax = 10
+        InputSelColor = clPurple
+        InputSelBackGround = clSilver
+        CaretInterval = 500
+        EscapeCodeType = esctCmdBox
+        GraphicalCharacterWidth = 10
+      end
+    end
+    object chrGrafica: TChart
+      Left = 1
+      Height = 272
+      Top = 768
+      Width = 1629
+      AxisList = <      
+        item
+          Grid.Color = clSilver
+          Marks.LabelBrush.Style = bsClear
+          Minors = <>
+          Title.LabelFont.Orientation = 900
+          Title.LabelBrush.Style = bsClear
+        end      
+        item
+          Grid.Color = clSilver
+          Intervals.Count = 1
+          Intervals.MinLength = -50
+          Alignment = calBottom
+          Marks.LabelBrush.Style = bsClear
+          Minors = <>
+          Position = 5
+          Title.LabelBrush.Style = bsClear
+        end>
+      BackColor = clWhite
+      Foot.Brush.Color = clBtnFace
+      Foot.Font.Color = clBlue
+      Title.Brush.Color = clBtnFace
+      Title.Font.Color = clBlue
+      Title.Text.Strings = (
+        'TAChart'
+      )
+      Align = alClient
+      object EjeX: TConstantLine
+        Tag = 2
+        Arrow.BaseLength = 6
+        Arrow.Visible = True
+        Position = 0
+        Title = 'Eje X'
+      end
+      object EjeY: TConstantLine
+        Tag = 3
+        Arrow.BaseLength = 6
+        Arrow.Visible = True
+        LineStyle = lsVertical
+        Position = 0
+      end
+      object Plotear: TLineSeries
+        Active = False
+        Marks.Shape = clsRoundRect
+        Marks.LinkPen.Style = psDot
+        LinePen.Color = clBlue
+        Pointer.Pen.Color = clRed
+        Pointer.Style = psCircle
+      end
+      object Funcion: TFuncSeries
+        Active = False
+        Extent.UseXMax = True
+        Extent.UseXMin = True
+        Extent.XMax = -5
+        Extent.XMin = 5
+        ExtentAutoY = True
+      end
+      object Area: TAreaSeries
+        Transparency = 150
+        Active = False
+        Title = 'Area'
+        AxisIndexY = 0
+        AreaBrush.Color = 14803455
+        AreaContourPen.Color = clRed
+        AreaContourPen.Style = psDot
+        AreaContourPen.Width = 3
+        AreaLinesPen.Style = psClear
+        UseZeroLevel = True
+      end
+    end
+    object Splitter2: TSplitter
+      Cursor = crVSplit
+      Left = 1
+      Height = 5
+      Top = 763
+      Width = 1629
+      Align = alTop
+      Beveled = True
+      Constraints.MaxHeight = 400
+      MinSize = 300
+      ParentShowHint = False
+      ResizeAnchor = akTop
+    end
+  end
+  object ReaderTimer: TTimer
+    Interval = 500
+    OnTimer = ReaderTimerTimer
+    left = 80
+    top = 456
+  end
+  object ProcessTimer: TTimer
+    Enabled = False
+    Interval = 100
+    OnTimer = ProcessTimerTimer
+    left = 216
+    top = 408
+  end
+  object FontDialog: TFontDialog
+    Width = 28
+    Height = 28
+    MinFontSize = 0
+    MaxFontSize = 0
+    left = 288
+    top = 480
+  end
+  object PopupMenu1: TPopupMenu
+    left = 160
+    top = 488
+    object MenuItem1: TMenuItem
+      Caption = 'Nothing here'
+    end
+  end
+end

@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="10"/>
+    <PathDelim Value="\"/>
+    <General>
+      <Flags>
+        <LRSInOutputDirectory Value="False"/>
+      </Flags>
+      <MainUnit Value="0"/>
+    </General>
+    <VersionInfo>
+      <Language Value=""/>
+      <CharSet Value=""/>
+    </VersionInfo>
+    <BuildModes Count="1">
+      <Item1 Name="default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IgnoreBinaries Value="False"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|ppw|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+        <LaunchingApplication PathPlusParams="\usr\X11R6\bin\xterm -T 'Lazarus Run Output' -e $(LazarusDir)\tools\runwait.sh $(TargetCmdLine)"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="3">
+      <Item1>
+        <PackageName Value="TAChartLazarusPkg"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="cmdbox"/>
+        <MinVersion Valid="True"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="LCL"/>
+      </Item3>
+    </RequiredPackages>
+    <Units Count="25">
+      <Unit0>
+        <Filename Value="CmdLineExample.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="15" Y="4"/>
+        <UsageCount Value="201"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="wnmainform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="WMainForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="389"/>
+        <CursorPos X="83" Y="582"/>
+        <FoldState Value=" T3kU0V212 pj2oP0r32]BoOrA0+[K41kS0{UA T6re05 T1lV0+051 T0x64C031111191313]4816"/>
+        <ExtraEditorCount Value="1"/>
+        <ExtraEditor1>
+          <IsVisibleTab Value="True"/>
+          <EditorIndex Value="1"/>
+          <WindowIndex Value="1"/>
+          <TopLine Value="247"/>
+          <CursorPos X="18" Y="229"/>
+        </ExtraEditor1>
+        <UsageCount Value="201"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="wnmainform.lfm"/>
+        <SyntaxHighlighter Value="LFM"/>
+        <UsageCount Value="31"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="tcmdbox.lrs"/>
+        <CursorPos X="17"/>
+        <UsageCount Value="8"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="ucmdline.pas"/>
+        <CursorPos X="8" Y="30"/>
+        <UsageCount Value="15"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\uflowcharteditor.pas"/>
+        <TopLine Value="1015"/>
+        <CursorPos X="25" Y="1039"/>
+        <UsageCount Value="1"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="ucmdbox.pas"/>
+        <UnitName Value="uCmdBox"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="226"/>
+        <CursorPos X="14" Y="36"/>
+        <UsageCount Value="36"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="solver_eq.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="84"/>
+        <CursorPos X="37" Y="105"/>
+        <UsageCount Value="193"/>
+        <Loaded Value="True"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="..\..\BiseccionPuntoFijo\unit1.pas"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit1"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="259"/>
+        <CursorPos X="3" Y="263"/>
+        <UsageCount Value="17"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="..\..\Parse\Parse\parsemath.pas"/>
+        <UnitName Value="ParseMath"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="175"/>
+        <CursorPos X="28" Y="183"/>
+        <UsageCount Value="6"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="integral_solver.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="99"/>
+        <CursorPos X="14" Y="118"/>
+        <UsageCount Value="190"/>
+        <Loaded Value="True"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="parsemath.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ParseMath"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="178"/>
+        <CursorPos X="3" Y="11"/>
+        <UsageCount Value="190"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="..\..\BiseccionPuntoFijo\generalized_solver_eq.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="155"/>
+        <CursorPos X="13" Y="133"/>
+        <UsageCount Value="6"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="main.lfm"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="18" Y="93"/>
+        <UsageCount Value="186"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="main.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmGraficadora"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <WindowIndex Value="1"/>
+        <TopLine Value="150"/>
+        <ExtraEditorCount Value="1"/>
+        <ExtraEditor1>
+          <EditorIndex Value="-1"/>
+          <CursorPos X="18" Y="10"/>
+        </ExtraEditor1>
+        <UsageCount Value="186"/>
+        <Loaded Value="True"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="diferential_solver.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="2"/>
+        <CursorPos Y="21"/>
+        <UsageCount Value="165"/>
+        <Bookmarks Count="1">
+          <Item0 X="23" Y="197" ID="7"/>
+        </Bookmarks>
+        <Loaded Value="True"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="..\..\Graphic\Graphic\main.pas"/>
+        <ComponentName Value="frmMain"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="55"/>
+        <CursorPos X="55" Y="71"/>
+        <UsageCount Value="48"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="..\..\BiseccionPuntoFijo\solver_eq.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="64"/>
+        <CursorPos X="35" Y="106"/>
+        <UsageCount Value="14"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="..\..\Taylor\Taylor\class_taylor.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="118"/>
+        <UsageCount Value="0"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="matrix.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Matrix"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="296"/>
+        <CursorPos X="60" Y="314"/>
+        <UsageCount Value="97"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="utils_commands.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="4"/>
+        <CursorPos X="31" Y="37"/>
+        <UsageCount Value="121"/>
+        <Loaded Value="True"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="..\..\GraphicsFunctions\GraphicsFunctions\main.pas"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="135"/>
+        <CursorPos X="7" Y="162"/>
+        <UsageCount Value="5"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="generalized_solver_eq.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="51"/>
+        <CursorPos X="111" Y="75"/>
+        <UsageCount Value="66"/>
+        <Loaded Value="True"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="lagrange.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Lagrange"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="54"/>
+        <CursorPos X="40" Y="49"/>
+        <UsageCount Value="65"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="..\..\..\..\..\..\usr\lib\lazarus\components\tachart\tachartutils.pas"/>
+        <UnitName Value="TAChartUtils"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="840"/>
+        <CursorPos X="35" Y="34"/>
+        <UsageCount Value="6"/>
+      </Unit24>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="wnmainform.pas"/>
+        <Caret Line="205" Column="24" TopLine="204"/>
+      </Position1>
+      <Position2>
+        <Filename Value="wnmainform.pas"/>
+        <Caret Line="234" Column="15" TopLine="213"/>
+      </Position2>
+      <Position3>
+        <Filename Value="wnmainform.pas"/>
+        <Caret Line="241" Column="20" TopLine="222"/>
+      </Position3>
+      <Position4>
+        <Filename Value="wnmainform.pas"/>
+        <Caret Line="234" Column="14" TopLine="201"/>
+      </Position4>
+      <Position5>
+        <Filename Value="wnmainform.pas"/>
+        <Caret Line="232" Column="55" TopLine="207"/>
+      </Position5>
+      <Position6>
+        <Filename Value="wnmainform.pas"/>
+        <Caret Line="239" Column="43" TopLine="218"/>
+      </Position6>
+      <Position7>
+        <Filename Value="wnmainform.pas"/>
+        <Caret Line="212" Column="21" TopLine="192"/>
+      </Position7>
+      <Position8>
+        <Filename Value="wnmainform.pas"/>
+        <Caret Line="213" Column="46" TopLine="184"/>
+      </Position8>
+      <Position9>
+        <Filename Value="wnmainform.pas"/>
+        <Caret Line="216" Column="21" TopLine="183"/>
+      </Position9>
+      <Position10>
+        <Filename Value="wnmainform.pas"/>
+        <Caret Line="192" Column="23" TopLine="171"/>
+      </Position10>
+      <Position11>
+        <Filename Value="wnmainform.pas"/>
+        <Caret Line="216" Column="29" TopLine="195"/>
+      </Position11>
+      <Position12>
+        <Filename Value="wnmainform.pas"/>
+        <Caret Line="192" Column="11" TopLine="171"/>
+      </Position12>
+      <Position13>
+        <Filename Value="wnmainform.pas"/>
+        <Caret Line="190" Column="25" TopLine="169"/>
+      </Position13>
+      <Position14>
+        <Filename Value="wnmainform.pas"/>
+        <Caret Line="216" Column="39" TopLine="195"/>
+      </Position14>
+      <Position15>
+        <Filename Value="wnmainform.pas"/>
+        <Caret Line="203" Column="26" TopLine="199"/>
+      </Position15>
+      <Position16>
+        <Filename Value="wnmainform.pas"/>
+        <Caret Line="145" Column="9" TopLine="112"/>
+      </Position16>
+      <Position17>
+        <Filename Value="wnmainform.pas"/>
+        <Caret Line="151" Column="3" TopLine="132"/>
+      </Position17>
+      <Position18>
+        <Filename Value="wnmainform.pas"/>
+        <Caret Line="147" Column="35" TopLine="121"/>
+      </Position18>
+      <Position19>
+        <Filename Value="wnmainform.pas"/>
+        <Caret Line="771" Column="53" TopLine="729"/>
+      </Position19>
+      <Position20>
+        <Filename Value="wnmainform.pas"/>
+        <Caret Line="763" Column="88" TopLine="728"/>
+      </Position20>
+      <Position21>
+        <Filename Value="wnmainform.pas"/>
+        <Caret Line="804" Column="34" TopLine="611"/>
+      </Position21>
+      <Position22>
+        <Filename Value="wnmainform.pas"/>
+        <Caret Line="316" Column="29" TopLine="280"/>
+      </Position22>
+      <Position23>
+        <Filename Value="solver_eq.pas"/>
+        <Caret Line="75" Column="59" TopLine="40"/>
+      </Position23>
+      <Position24>
+        <Filename Value="solver_eq.pas"/>
+        <Caret Line="48" Column="23" TopLine="20"/>
+      </Position24>
+      <Position25>
+        <Filename Value="wnmainform.pas"/>
+        <Caret Line="309" Column="24" TopLine="282"/>
+      </Position25>
+      <Position26>
+        <Filename Value="wnmainform.pas"/>
+        <Caret Line="290" Column="8" TopLine="272"/>
+      </Position26>
+      <Position27>
+        <Filename Value="solver_eq.pas"/>
+        <Caret Line="105" Column="23" TopLine="84"/>
+      </Position27>
+      <Position28>
+        <Filename Value="wnmainform.pas"/>
+        <Caret Line="822" Column="6" TopLine="748"/>
+      </Position28>
+      <Position29>
+        <Filename Value="wnmainform.pas"/>
+        <Caret Line="818" Column="58" TopLine="795"/>
+      </Position29>
+      <Position30>
+        <Filename Value="wnmainform.pas"/>
+        <Caret Line="362" Column="2" TopLine="350"/>
+      </Position30>
+    </JumpHistory>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <Parsing>
+      <SyntaxOptions>
+        <UseAnsiStrings Value="False"/>
+      </SyntaxOptions>
+    </Parsing>
+    <CodeGeneration>
+      <Checks>
+        <IOChecks Value="True"/>
+        <RangeChecks Value="True"/>
+        <OverflowChecks Value="True"/>
+        <StackChecks Value="True"/>
+      </Checks>
+      <VerifyObjMethodCallValidity Value="True"/>
+    </CodeGeneration>
+    <Linking>
+      <Debugging>
+        <StripSymbols Value="True"/>
+      </Debugging>
+      <LinkSmart Value="True"/>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="2">
+      <Item1>
+        <Name Value="ECodetoolError"/>
+      </Item1>
+      <Item2>
+        <Name Value="EFOpenError"/>
+      </Item2>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

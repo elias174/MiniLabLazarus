@@ -1,0 +1,297 @@
+object frmGraficadora: TfrmGraficadora
+  Left = 1920
+  Height = 729
+  Top = 18
+  Width = 1362
+  Caption = 'Graficadora'
+  ClientHeight = 729
+  ClientWidth = 1362
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  LCLVersion = '1.8.2.0'
+  WindowState = wsMaximized
+  object pnlContenedor: TPanel
+    Left = 2
+    Height = 725
+    Top = 2
+    Width = 222
+    Align = alLeft
+    BorderSpacing.Around = 2
+    BevelInner = bvRaised
+    BevelOuter = bvLowered
+    ClientHeight = 725
+    ClientWidth = 222
+    TabOrder = 0
+    object cboFuncion: TComboBox
+      Left = 4
+      Height = 23
+      Top = 21
+      Width = 214
+      Align = alTop
+      BorderSpacing.Around = 2
+      ItemHeight = 15
+      Items.Strings = (
+        'sin(x)'
+        'cos(x)'
+        'power(x,2)-4*x'
+        '1-3*x'
+      )
+      TabOrder = 0
+    end
+    object btnGraficar: TButton
+      AnchorSideTop.Control = pnlOpciones
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = pnlOpciones
+      AnchorSideRight.Side = asrBottom
+      Left = 104
+      Height = 32
+      Top = 269
+      Width = 115
+      Anchors = [akTop, akRight]
+      BorderSpacing.Top = 5
+      Caption = 'Graficar'
+      OnClick = btnGraficarClick
+      TabOrder = 1
+    end
+    object lblFuncion: TLabel
+      Left = 4
+      Height = 15
+      Top = 4
+      Width = 214
+      Align = alTop
+      BorderSpacing.Around = 2
+      Caption = 'Función:'
+      ParentColor = False
+    end
+    object Label1: TLabel
+      Left = 4
+      Height = 15
+      Top = 59
+      Width = 214
+      Align = alTop
+      BorderSpacing.Left = 2
+      BorderSpacing.Top = 15
+      BorderSpacing.Right = 2
+      Caption = 'Intervalo función:'
+      ParentColor = False
+    end
+    object ediIntervalo: TEdit
+      Left = 4
+      Height = 23
+      Top = 76
+      Width = 214
+      Align = alTop
+      BorderSpacing.Around = 2
+      TabOrder = 2
+      Text = '[ -10; 10 ]'
+    end
+    object cboxColorFuncion: TColorBox
+      Left = 2
+      Height = 23
+      Top = 128
+      Width = 218
+      DefaultColorColor = clBlue
+      Selected = clBlue
+      Align = alTop
+      ItemHeight = 16
+      OnChange = cboxColorFuncionChange
+      TabOrder = 3
+    end
+    object Label2: TLabel
+      Left = 4
+      Height = 15
+      Top = 111
+      Width = 214
+      Align = alTop
+      BorderSpacing.Top = 10
+      BorderSpacing.Around = 2
+      Caption = 'Color de gráfica'
+      ParentColor = False
+    end
+    object chkUsarPloteo: TCheckBox
+      AnchorSideLeft.Control = cboxColorFuncion
+      AnchorSideTop.Control = cboxColorFuncion
+      AnchorSideTop.Side = asrBottom
+      Left = 4
+      Height = 21
+      Top = 156
+      Width = 94
+      BorderSpacing.Left = 2
+      BorderSpacing.Top = 5
+      Caption = 'Usar ploteo'
+      Checked = True
+      OnChange = chkUsarPloteoChange
+      State = cbChecked
+      TabOrder = 4
+    end
+    object pnlOpciones: TPanel
+      AnchorSideLeft.Control = pnlContenedor
+      AnchorSideTop.Control = chkUsarPloteo
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = pnlContenedor
+      AnchorSideRight.Side = asrBottom
+      Left = 4
+      Height = 82
+      Top = 182
+      Width = 215
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Left = 2
+      BorderSpacing.Top = 5
+      BorderSpacing.Right = 1
+      BevelInner = bvRaised
+      BevelOuter = bvLowered
+      ClientHeight = 82
+      ClientWidth = 215
+      TabOrder = 5
+      object chkMostrarPuntos: TCheckBox
+        Left = 16
+        Height = 21
+        Top = 8
+        Width = 116
+        Caption = 'Mostrar puntos'
+        TabOrder = 0
+      end
+      object chkEscogerN: TCheckBox
+        Left = 16
+        Height = 21
+        Top = 32
+        Width = 79
+        Caption = 'Esoger N'
+        TabOrder = 1
+      end
+      object ediN: TEdit
+        Left = 96
+        Height = 23
+        Top = 31
+        Width = 80
+        TabOrder = 2
+        Text = '1000'
+      end
+      object chkMostrarValores: TCheckBox
+        Left = 16
+        Height = 21
+        Top = 56
+        Width = 118
+        Caption = 'Mostrar valores'
+        TabOrder = 3
+      end
+    end
+    object Button1: TButton
+      AnchorSideLeft.Control = btnGraficar
+      AnchorSideTop.Control = btnGraficar
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = btnGraficar
+      AnchorSideRight.Side = asrBottom
+      Left = 104
+      Height = 31
+      Top = 301
+      Width = 115
+      Caption = 'Area'
+      OnClick = Button1Click
+      TabOrder = 6
+    end
+    object AreaA: TEdit
+      Left = 11
+      Height = 23
+      Top = 306
+      Width = 37
+      Alignment = taCenter
+      TabOrder = 7
+      Text = '-3'
+    end
+    object AreaB: TEdit
+      Left = 54
+      Height = 23
+      Top = 306
+      Width = 39
+      Alignment = taCenter
+      TabOrder = 8
+      Text = '3'
+    end
+    object Label3: TLabel
+      Left = 2
+      Height = 35
+      Top = 688
+      Width = 218
+      Align = alBottom
+      AutoSize = False
+      Caption = 'Sólo lo programé para que funcione con ploteo'
+      Color = 8454143
+      Font.Color = clRed
+      ParentColor = False
+      ParentFont = False
+      Transparent = False
+      WordWrap = True
+    end
+  end
+  object chrGrafica: TChart
+    Left = 226
+    Height = 729
+    Top = 0
+    Width = 1136
+    AxisList = <    
+      item
+        Grid.Color = clSilver
+        Marks.LabelBrush.Style = bsClear
+        Minors = <>
+        Title.LabelFont.Orientation = 900
+        Title.LabelBrush.Style = bsClear
+      end    
+      item
+        Grid.Color = clSilver
+        Intervals.Count = 1
+        Intervals.MinLength = -50
+        Alignment = calBottom
+        Marks.LabelBrush.Style = bsClear
+        Minors = <>
+        Position = 5
+        Title.LabelBrush.Style = bsClear
+      end>
+    BackColor = clWhite
+    Foot.Brush.Color = clBtnFace
+    Foot.Font.Color = clBlue
+    Title.Brush.Color = clBtnFace
+    Title.Font.Color = clBlue
+    Title.Text.Strings = (
+      'TAChart'
+    )
+    Align = alClient
+    object EjeX: TConstantLine
+      Arrow.BaseLength = 6
+      Arrow.Visible = True
+      Position = 0
+      Title = 'Eje X'
+    end
+    object EjeY: TConstantLine
+      Arrow.BaseLength = 6
+      Arrow.Visible = True
+      LineStyle = lsVertical
+      Position = 0
+    end
+    object Plotear: TLineSeries
+      Active = False
+    end
+    object Funcion: TFuncSeries
+      Active = False
+      Extent.UseXMax = True
+      Extent.UseXMin = True
+      Extent.XMax = -5
+      Extent.XMin = 5
+      OnCalculate = FuncionCalculate
+      ExtentAutoY = True
+    end
+    object Area: TAreaSeries
+      Transparency = 150
+      Active = False
+      Title = 'Area'
+      OnGetMark = AreaGetMark
+      AxisIndexY = 0
+      AreaBrush.Color = 14803455
+      AreaContourPen.Color = clRed
+      AreaContourPen.Style = psDot
+      AreaContourPen.Width = 3
+      AreaLinesPen.Style = psClear
+      UseZeroLevel = True
+    end
+  end
+end
